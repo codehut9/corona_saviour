@@ -1,5 +1,6 @@
 import tkinter as tk
 from pyzipcode import ZipCodeDatabase
+import gmplot
 
 zcdb = ZipCodeDatabase()
 
@@ -11,8 +12,12 @@ def instruction():
 def start():
     def submit():
         zipcode=zcdb[560103]
-        lat=zipcode.latitude
-        long=zipcode.longitude
+        latitude=zipcode.latitude
+        longitude=zipcode.longitude
+
+        gmap=gmplot.GoogleMapPlotter(latitude,longitude)
+        
+        gmap.draw( "C:\\Users\\apple\\code\\corona_saviour\\map1.html" )
 
 
 
