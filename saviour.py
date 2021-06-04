@@ -16,16 +16,28 @@ def start():
         longitude=zipcode.longitude
 
         gmap=gmplot.GoogleMapPlotter(latitude,longitude)
+        SIHM =gmplot.GoogleMapPlotter(14.15201,77.77684)
+       # Sai Institute of Higher Medical Sciences=(14.15201,77.77684)
+       # Sri Venkateswara Institute of Medical Sciences=(13.63805,79.40389)
+       # Siddhartha Medical College, NTR University of Health Sciences=(16.51723,80.67144)
+       # Rainbow Hospital headquarters=(17.41386,78.44608)
+       # Apollo Hospitals Ramnagar Vizag=(17.71725,83.30918)
+       # CARE Hospitals - Ram Nagar=(17.72027,83.31262)
+       # Government ENT Hospital, Visakhapatnam=(17.73022,83.33074)
+       # Government Victoria Hospital=(17.69883,83.29810)
+       # King George Hospital=(17.70872,83.30603)
+       # Rani Chandramani Devi Government Hospital=(17.72889,83.33686)
+       # SevenHills Hospital=(17.71730,83.30957)
         
         gmap.draw( "C:\\Users\\apple\\code\\corona_saviour\\map1.html" )
 
 
 
-    pin_label=tk.Label(root, text = 'pin code', font=('Arial',10, 'bold')
-    pin_entry=tk.Label(root,font=('Arial',10)
+    pin_label=tk.Label(root, text = 'pin code', font=('Arial',10, 'bold'))
+    pin_entry=tk.Label(root,font=('Arial',10))
 
-    cat_label=tk.Label(root, text = 'category of covid(low,mild,critical)', font=('Arial',10, 'bold')
-    cat_entry=tk.Label(root,font=('Arial',10)
+    cat_label=tk.Label(root, text = 'category of covid(low,mild,critical)', font=('Arial',10, 'bold'))
+    cat_entry=tk.Label(root,font=('Arial',10))
     
     sub_btn=tk.Button(root,text = 'Submit', command = submit)
   
